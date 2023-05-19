@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #2f3640;
+    padding: 16px 0px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    }
+
+header h1{
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+}
+
+header li{
+    display: inline;
+}
+
+header li a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+header li a:hover{
+    text-shadow: 0px 0px 10px black;
+    transition: .3s;
+}
+
+.container{
+    width: 1000px;
+    margin:auto;
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2, .articles article{
+    margin-bottom: 16px;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img{
+    /*height: 180px;*/
+    width: 100%;
+    border-radius: 3px;
+}
+
+.articles article{
+    width: 30%;
+}
+
+.container h2{
+    font-size: 2.2em;
+}
+
+.articles article h3{
+    font-size: 1.4em;
+    margin: 8px 0;
+}
+
+.articles article a{
+    margin-top: 5px;
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.articles article p{
+    line-height: 1.4em;
+    text-align: justify;
+    font-size: 1em;
+}
+
+article.noticia:hover{
+    background-color: rgba(0, 0, 0, 0.119);
+    border: 1px solid rgba(0, 0, 0, 0.285);
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.502);
+    padding: 5px;
+}
+
+#esportes{
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+#esportes a{
+    background-color: green;
+}
+
+#esportes a:hover{
+    background-color: darkgreen;
+}
+
+#economia{
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+#economia a{
+    background-color: orange;
+    color: black;
+}
+
+#economia a:hover{
+    background-color: darkgoldenrod;
+}
+
+#entretenimento{
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#entretenimento a{
+    background-color: red;
+}
+
+#entretenimento a:hover{
+    background-color: darkred;
+}
+
+#tecnologia{
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+#tecnologia a{
+    background-color: blue;
+}
+
+#tecnologia a:hover{
+    background-color: darkblue;
+}
