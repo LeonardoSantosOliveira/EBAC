@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        fieldset{
+            margin: auto;
+            width: 300px;
+        }
+
+        label{
+            padding-right: 10px;
+        }
+
+        input{
+            width: calc(100% - 70px);
+            margin-bottom: 5px;
+        }
+
+        input.botao{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <fieldset>
+        <legend>Cadastro</legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nnome" id="nome" autocomplete="name" required placeholder="Odranoel">
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" name="nemail" id="email" required autocomplete="email" placeholder="email@email.com">
+            </div>
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" name="nsenha" id="senha" required autocomplete="current-password" minlength="5" maxlength="15" placeholder="*****">
+            </div>
+            <input class="botao" type="submit" value="Cadastrar">
+            <input class="botao" type="reset" value="Limpar">
+        </form>
+    </fieldset>
+</body>
+</html>
