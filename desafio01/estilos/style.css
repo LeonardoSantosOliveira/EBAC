@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap');
+
+/*
+font-family: 'Bungee', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root{
+    --fonte-game: 'Bungee', cursive;
+    --fonte-texto: 'Roboto', sans-serif;
+
+    --corazul: #182C61;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    height: 113px;
+    max-width: 1366px;
+    padding: 0 35px 0 50px;
+    background-color: var(--corazul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.479);
+}
+
+header h1{
+    font-family: var(--fonte-game);
+    margin: 10px;
+    font-weight: normal;
+}
+
+header ul li{
+    font-family: var(--fonte-game);
+    display: inline;
+    margin-right: 18px;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    padding: 24px 55px 10px 50px;
+    width: 100vw;
+}
+
+#sobrealoja{
+    margin-bottom: 50px;
+}
+
+#sobrealoja .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sobrealoja .container img{
+    margin-right: 30px;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#sobre h2{
+    font-family: var(--fonte-game);
+    color: var(--corazul);
+    font-weight: normal;
+}
+
+#sobre p {
+    font-family: var(--fonte-texto);
+    padding-top: 10px;
+    text-align: justify;
+    line-height: 1.2em;
+    font-size: 1em;
+}
+
+#consoles{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#consoles img{
+    height: 25px;
+}
+
+#contato h2{
+    font-family: var(--fonte-game);
+    color: var(--corazul);
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.containercontato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.containercontato h3{
+    font-family: var(--fonte-game);
+    color: var(--corazul);
+    font-weight: normal;
+}
+
+form{
+    width: 320px;
+}
+
+.campo input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.campo textarea{
+    display: block;
+    width: 100%;
+}
+
+form input[type="submit"]{
+    width: 100%;
+    font-family: var(--fonte-game);
+    color: white;
+    height: 45px;
+    background-color: var(--corazul);
+}
+
+#containermidia img{
+    height: 40px;
+    padding: 5px;
+}
+
+#venhaate p {
+    font-family: var(--fonte-texto);
+}
+
+footer{
+    width: 100vw;
+    background-color: var(--corazul);
+    padding: 16px;
+}
+
+footer p{
+    color: white;
+    font-family: var(--fonte-texto);
+    padding-left: 35px;
+}

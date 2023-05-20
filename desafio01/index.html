@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Games Shop - A sua loja de games</title>
+</head>
+<body>
+    <header>
+        <h1>games shop</h1>
+        <ul>
+            <li><a href="#sobrealoja">Sobre a loja</a></li>
+            <li><a href="#contato">contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="sobrealoja">
+            <div class="container">
+                <img src="images/loja.jpg" alt="loja - games shop">
+                <div id="sobre">
+                    <h2>sobre a loja</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut, illo aspernatur vero magni tenetur mollitia impedit natus voluptas earum dolorum, aliquam incidunt odit dicta esse voluptatum ducimus ratione sed.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel error, eos reiciendis autem pariatur recusandae rem? Nostrum suscipit neque consequatur quaerat esse. Quasi voluptate nam aperiam ex vero voluptatibus atque!</p>
+                    <div id="consoles">
+                        <img src="images/nintendo.png" alt="nintendo">
+                        <img src="images/xbox.png" alt="xbox">
+                        <img src="images/playstation.png" alt="playstation">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>contato</h2>
+            <div class="containercontato">
+                <div class="containerfale">
+                    <h3>fale conosco</h3>
+                    <div id="containerform">
+                        <form action="contato.php" method="post" autocomplete="on">
+                            <div class="campo">
+                                <input type="text" name="nome" id="inome" placeholder="Seu nome" required autocomplete="name">
+                            </div>
+                            <div class="campo">
+                                <input type="email" name="email" id="iemail" placeholder="Seu email" required autocomplete="email">
+                            </div>
+                            <div class="campo">
+                                <input type="tel" name="tel" id="itel" placeholder="Seu telefone (opcional)" autocomplete="tel">
+                            </div>
+                            <textarea class="campo" name="mensagem" id="imensagem" placeholder="Sua mensagem"  cols="41" rows="12"></textarea>
+                            <input class="campo"  type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+                <div id="containeracompanhe">
+                    <h3>nos acompanhe</h3>
+                    <div id="containermidia">
+                        <img src="images/instagram.png" alt="instagram">
+                        <img src="images/facebook.png" alt="facebook">
+                        <img src="images/youtube.png" alt="youtube">
+                    </div>
+                </div>
+                <div id="venhaate">
+                    <h3>venha até nós</h3>
+                    <p>Rua JavaScript nº404, Vila HTML - São Paulo - SP</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Games Shop - Todos os direitos reservados - 2023</p>
+    </footer>
+</body>
+</html>
