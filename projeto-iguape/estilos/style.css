@@ -192,8 +192,8 @@ section#contato .socialcontainer form input,button,textarea{
 
 section#contato .socialcontainer form button{
     display: block;
-    background-color: #004a7f;
-    color: white;
+    background-color: #FFED02;
+    color: #004a7f;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3em;
     border-style: none;
