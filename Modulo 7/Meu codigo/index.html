@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>EBAC Banking</title>
+    <title>EBAC Banking - Depósitos</title>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div id="text">
-                <h1>EBAC Banking</h1>
-                <h2>Depósitos</h2>
-            </div>
-            <form method="post">
-                <input type="text" placeholder="Nome completo do beneficiário" required>
-                <input type="number" name="numconta" id="numconta" placeholder="Número da conta" required>
-                <input type="number" name="valor" id="valor" placeholder="Valor R$" required>
-                <textarea name="descrição" id="descrição" placeholder="Descrição (opcional)"></textarea>
-                <button type="submit">DEPOSITAR</button>
-            </form>
-        </div>
-    </main>
+    <div class="container">
+        <h1>EBAC Banking</h1>
+        <h2>Depósitos</h2>
+        <form id="form-deposito">
+            <input type="text" name="Nome" id="nome-beneficiario" placeholder="Nome completo do beneficiário" required>
+            <p class="error-message">O nome precisa estar completo</p>
+            <input type="number" name="numero" id="numero-conta" placeholder="Numero da conta" required>
+            <input type="number" name="Valor" id="valor-deposito" placeholder="Valor R$" required>
+            <textarea name="Descrição" id="descricao" placeholder="Descrição (opcional)"></textarea>
+            <button type="submit" id="btndepositar">depositar</button>
+        </form>
+        <p class="success-message">
+            
+        </p>
+    </div>
+    <script src="leo.js"></script>
 </body>
 </html>
