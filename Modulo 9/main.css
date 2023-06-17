@@ -20,6 +20,11 @@ header{
     font-style: italic;
 }
 
+header h1 a{
+    text-decoration: none;
+    color: white;
+}
+
 header button{
     margin-left: 16px;
 }
