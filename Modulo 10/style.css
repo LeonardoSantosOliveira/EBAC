@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .container{
     max-width: 1024px;
     width: 100%;
@@ -26,9 +30,17 @@ header> .container{
     align-items: center;
 }
 
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
 nav{
+    margin-top: 16px;
+    display: none;
     background-color: #575fcf;
     padding: 16px 0;
+    width: 100%;
 }
 
 nav li {
@@ -45,9 +57,6 @@ nav li a{
     text-decoration: none;
 }
 
-.menu-hamburguer{
-    width: 32px;
-}
 
 .menu-hamburguer span{
     height: 2px;
