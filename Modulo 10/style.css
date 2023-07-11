@@ -4,8 +4,8 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html{
@@ -19,33 +19,33 @@ html{
 }
 
 header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header, footer{
     background-color: #192a56;
     padding-top: 16px;
     color: #fff;
 }
 
-header> .container{
-    display: flex;
+header > .container, footer > .container{
     justify-content: space-between;
     align-items: center;
-}
-
-.menu-hamburguer{
-    width: 32px;
-    cursor: pointer;
+    padding-bottom: 16px;
 }
 
 nav{
-    margin-top: 16px;
-    display: none;
     background-color: #575fcf;
     padding: 16px 0;
-    width: 100%;
+    display: none;
 }
 
-nav li {
-    display: inline;
+nav li{
     list-style: none;
+    display: inline;
     margin-right: 16px;
     font-size: 18px;
     font-weight: bold;
@@ -53,15 +53,136 @@ nav li {
 }
 
 nav li a{
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
 
 .menu-hamburguer span{
     height: 2px;
     width: 100%;
-    background-color: white;
+    background-color: #fff;
     display: block;
     margin-bottom: 4px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+.lista-veiculos{
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img{
+    max-width: 100%;
+}
+
+.lista-veiculos li h3{
+    margin: 16px 0;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all ease .2s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: #15ce78;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.719);
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+.price del{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.item-central{
+    margin: 0 5%;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input, .form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form{
+    max-width: 360px;
+}
+
+form button{
+    max-width: 120px;
+    background-color: darkblue;
+}
+
+form button:hover{
+    background-color: blue;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+footer .container{
+    justify-content: space-between;
+    align-items: center;
 }
