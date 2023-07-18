@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --cor1: #101F29;
+    --cor2: #121536;
+    --cor3: #243b69;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--cor2);
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    padding-top: 24px;
+    font-size: 3em;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.422);
+}
+
+header p{
+    font-size: 1.3em;
+    padding-bottom: 24px;
+}
+
+header .menu-hamburguer span{
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.relative{
+    position: relative;
+}
+
+.menu-hamburguer{
+    margin-top: 55px;
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    right: 0;
+    top: 0;
+}
+
+nav{
+    display: none;
+    background-color: var(--cor3);
+    padding: 16px 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 16px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+main .container section{
+    margin-top: 24px;
+    display: flex;
+}
+
+.title-text-section{
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: var(--cor2);
+    font-size: 2em;
+}
+
+main .container section p{
+    width: 100%;
+}
+
+main .container section img{
+    margin-left: 16px;
+    height: 250px;
+}
+
+.container-consoles{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.console{
+    width: 30%;
+}
+
+.console img{
+    width: 100%;
+}
+
+.elemento-central{
+    margin: 0 5%;
+}
