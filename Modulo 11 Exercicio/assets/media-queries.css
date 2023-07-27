@@ -1,0 +1,53 @@
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    
+    .container{
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .sobre{
+        flex-direction: column;
+    }
+
+    .sobre img{
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .produtos{
+        gap: 5%;
+    }
+
+    .item{
+        max-width: 47.5%;
+    }
+
+} /*Tablet*/
+
+@media screen and (max-width: 640px){
+
+    .container{
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .sobre{
+        flex-direction: column;
+    }
+
+    .sobre img{
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    header ul li{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .item{
+        max-width: 100%;
+        width: 100%;
+    }
+
+} /*smartphone*/
