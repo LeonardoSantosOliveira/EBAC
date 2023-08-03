@@ -36,8 +36,9 @@
     }
 
     .sobre img{
-        height: 100%;
+        width: 100%;
         margin-bottom: 30px;
+        overflow-x: hidden;
     }
 
     header ul li{
