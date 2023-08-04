@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Exercicio Bootstrap</title>
+</head>
+<body>
+    <header>
+    </header>
+    <div class="alert alert-warning alert-dismissible">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        Leia o contrato atentamente e preencha seus dados!
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-3">Formulário</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <h2 class="h2">Contrato:</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi magnam esse molestias? Tempore quisquam magnam, qui facilis perferendis voluptatibus voluptatum blanditiis quo quod soluta error a iste neque deleniti. ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi magnam esse molestias? Tempore quisquam magnam, qui facilis perferendis voluptatibus voluptatum blanditiis quo quod soluta error a iste neque deleniti. ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi magnam esse molestias? Tempore quisquam magnam, qui facilis perferendis voluptatibus voluptatum blanditiis quo quod soluta error a iste neque deleniti. ipsum dolor sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nulla debitis repellendus consectetur ducimus optio, eaque vero voluptatem, veritatis sit corporis fugiat. Laudantium omnis perferendis ducimus saepe quas non architecto. Tempore quisquam magnam, qui facilis perferendis voluptatibus voluptatum blanditiis quo quod soluta error a iste neque deleniti. ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi magnam esse molestias? Tempore quisquam magnam, qui facilis perferendis voluptatibus voluptatum blanditiis quo quod soluta error a iste neque deleniti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo distinctio harum quidem, aperiam quas ipsum fuga corrupti, cupiditate tempore quasi alias debitis rerum soluta exercitationem accusantium dolorum! Eos, distinctio itaque.</p>
+                <p>03/08/2023 - Iguape/SP
+                </p>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="aceito-termos">
+                    <label class="form-check-label" for="aceito-termos">Li e aceito todos os termos</label>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 dados">
+                <h2>Dados:</h2>
+                <form id="formulario" autocomplete="off">
+                    <div class="campo">
+                        <label class="form-label" for="nome">Seu Nome:</label>
+                        <input class="form-control" type="text" id="nome" name="nome" placeholder="Jackson Daniel">
+                    </div>
+                    <div class="campo">
+                        <label class="form-label" for="email">Seu E-mail:</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="email@email.com">
+                    </div>
+                    <div class="campo">
+                        <label class="form-label" for="telefone">Seu Telefone:</label>
+                        <input class="form-control" type="tel" name="telefone" id="telefone">
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem" class="form-label">Sua Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" placeholder="Sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-md">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_PT.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

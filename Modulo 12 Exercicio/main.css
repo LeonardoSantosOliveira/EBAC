@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, #A38F37, #2728A3);
+}
+
+.container{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.475);
+    background-color: #fff;
+}
+
+.dados{
+    border-left: 2px solid black;
+}
+
+.display-3{
+    text-align: center;
+}
+
+p{
+    text-indent: 16px;
+}
+
+.campo{
+    margin-bottom: 24px;
+}
+
+button.btn{
+    width: 100%;
+}
+
+#mensagem{
+    resize: none;
+    height: 130px;
+}
+
+label.form-check-label{
+    margin-bottom: 16px;
+}
+
+div.form-check{
+    float: right;
+}
