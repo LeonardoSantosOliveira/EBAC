@@ -3,9 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="main.css">
     <title>HAGAKA GAMES v2</title>
 </head>
 <body>
-    
+<header class="fix-top">
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container py-3">
+            <a class="navbar-brand mx-auto" href="#">
+                <i class="bi bi-controller"></i>
+                <span >HAGAKA GAMES</span>
+            </a>
+            <button class="navbar-toggler mx-auto my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav mx-md-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="nav-link" href="#">SOBRE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        CONSOLES
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a id="xboxDD" class="dropdown-item" href="#">Xbox</a></li>
+                        <li><a id="playstationDD" class="dropdown-item" href="#">Playstation</a></li>
+                        <li><a id="nintendoDD" class="dropdown-item" href="#">Nintendo</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+<!-- CAROUSEL -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner ">
+        <div class="carousel-item active" data-bs-interval="4000">
+        <img src="imagens/forza-carousel.jpg" class="d-block w-100" alt="forza horizon 5">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Forza Horizon 5</h5>
+            <p>orza Horizon 5 é um jogo eletrônico de corrida desenvolvido pela Playground Games e publicado pela Xbox Game Studios. É o quinto jogo da série Forza Horizon e o décimo segundo título principal da franquia Forza. O jogo se passa em uma representação ficcional do México.</p>
+            <button type="button" class="btn btn-warning btn-md">Comprar</button>
+        </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+        <img src="imagens/spideman-carousel.jpg" class="d-block w-100" alt="spiderman">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Marvel's Spider-Man Remastered</h5>
+            <p>Esse não é o Spider-Man que você conheceu ou viu. No Marvel’s Spider-Man Remasterizado, encontramos um Peter Parker experiente e mais preparado para enfrentar a onda de crimes de Nova York. Em contrapartida, ele luta para conciliar o caos em sua vida pessoal e carreira enquanto o destino da Nova York da Marvel pesa sobre seus ombros.</p>
+            <button type="button" class="btn btn-dark btn-md">Comprar</button>
+        </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+        <img src="imagens/fortnite-carousel.jpg" class="d-block w-100" alt="fortnite">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Fortnite</h5>
+            <p>Fortnite é um jogo eletrônico multijogador online revelado originalmente em 2011, desenvolvido pela Epic Games e lançado como diferentes modos de jogo que compartilham a mesma jogabilidade e motor gráfico de jogo.</p>
+            <button type="button" class="btn btn-primary btn-md">Comprar</button>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- CARDS -->
+<div class="container">
+        <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="bi bi-xbox animate__animated animate__backInLeft"></i>
+                    <h5 class="card-title animate__animated animate__backInRight">XBOX</h5>
+                    <p class="card-text animate__animated animate__backInUp">Xbox é uma marca de consoles de jogos eletrônicos criada e patenteada pela Microsoft.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="bi bi-playstation animate__animated animate__backInLeft"></i>
+                    <h5 class="card-title animate__animated animate__backInRight">PLAYSTATION</h5>
+                    <p class="card-text animate__animated animate__backInUp">Playstation é uma série de consoles de videogame criada e desenvolvida pela Sony Computer Entertainment </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="bi bi-nintendo-switch animate__animated animate__backInLeft"></i>
+                    <h5 class="card-title animate__animated animate__backInRight">NINTENDO</h5>
+                    <p class="card-text animate__animated animate__backInUp">Nintendo é responsável por séries que se tornaram ícones em todo o mundo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ACCORDION -->
+<div class="container my-5">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Sobre a loja
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur voluptates unde eos? Corrupti cupiditate dignissimos itaque perspiciatis quos, tenetur veniam rerum incidunt at vero repudiandae debitis porro sapiente quisquam.</p>
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Como comprar?
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem possimus iste, est placeat deleniti quod dicta illo aspernatur, repellat voluptatibus corrupti necessitatibus. Delectus, officia rem. Delectus corporis modi alias iure?</p>
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Por que comprar conosco?
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ad quae, itaque mollitia dignissimos nemo, reiciendis deleniti molestiae vero sint est corrupti dolorem impedit quo tenetur amet explicabo nam earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae excepturi aut similique id voluptatem labore dolore corporis eveniet adipisci illum aliquam cupiditate aperiam temporibus porro omnis doloribus accusamus, sint ratione!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

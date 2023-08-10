@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-color1{
+    background-color: black;
+}
+
+.fix-top{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 2.3em;
+}
+
+#xboxDD:hover{
+    background-color: green;
+}
+
+#playstationDD:hover{
+    background-color: blue;
+}
+
+#nintendoDD:hover{
+    background-color: red;
+}
+
+.nav-link{
+    font-size: 1.4em;
+}
+
+.navbar-nav{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CAROUSEL */
+
+.carousel-item h5{
+    margin-bottom: 20px;
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item p{
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+}
+
+.carousel-item button{
+    margin-bottom: 40px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev span,
+.carousel-control-next span{
+    color: red;
+}
+
+/* CARD */
+
+.card{
+    margin: 2em auto;
+}
+
+.card-body i{
+    display: block;
+    font-size: 4em;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.card-body h5{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: .7em;
+}
+
