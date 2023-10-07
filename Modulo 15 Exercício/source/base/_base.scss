@@ -1,0 +1,14 @@
+@use '../config/variables';
+
+
+body {
+    background-color: variables.$bg-color; 
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    padding: 56px 0;
+}

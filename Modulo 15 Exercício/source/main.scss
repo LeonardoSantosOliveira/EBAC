@@ -1,0 +1,55 @@
+@use 'config/reset';
+@use 'config/variables';
+@use 'base/base';
+@use 'layouts/classes';
+
+header {
+    background-color: variables.$primary-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    & .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+.menu{
+    display: flex;
+
+    & li{
+        font-weight: bold;
+        margin-left: 24px;  
+
+        & a{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+.product{
+
+    &-item img{
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    &-button{
+        display: block;
+        background-color: variables.$secondary-color;
+        color: #fff;
+        text-align: center;
+        padding: 8px 0;
+        border-radius: 8px;
+        margin-top: 8px;
+        text-decoration: none;
+
+        &:hover{
+            background-color: lighten(variables.$secondary-color, 15%);
+        }
+    }
+}
