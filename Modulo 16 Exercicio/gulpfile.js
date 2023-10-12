@@ -1,11 +1,12 @@
-const {src,dest,series} = require("gulp")
+const {src,dest} = require("gulp")
+const gulp = require('gulp')
 const sass = require("gulp-sass")(require("sass"))
 const uglify = require("gulp-uglify")
 const imagemin = require("gulp-imagemin")
 
 function compilaSass(){
     return src("source/**/*.scss")
-        .pipe(sass().on("error",sass.logError))
+        .pipe(sass({outputStyle: 'compressed'}).on("error",sass.logError))
         .pipe(dest("build/"))
 }
 
@@ -24,4 +25,4 @@ function comprimeImg(){
 exports.compilaSass = compilaSass
 exports.comprimeJs = comprimeJs
 exports.comprimeImg = comprimeImg
-exports.default = series(compilaSass,comprimeJs,comprimeImg)
+exports.default = gulp.series(compilaSass,comprimeJs,comprimeImg)
