@@ -4,3 +4,9 @@ clique.addEventListener('click', function(e){
     const coX = e.clientX
     alert('Você na coordenada X: ' + coX + ' E na coordenada Y: ' + coY)
 })
+
+function somar (a, b){
+    return a + b
+}
+
+module.exports = 

@@ -1,0 +1,20 @@
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 768px) and (max-width: 1023px)";
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and @breakpointMobile{
+        max-width: 70%;
+    }
+
+    @media screen and @breakpointTablet{
+        max-width: 80%;
+    }
+}
