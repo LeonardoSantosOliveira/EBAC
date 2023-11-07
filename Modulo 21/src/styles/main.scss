@@ -1,0 +1,190 @@
+@use 'hero';
+@use 'shows';
+@use 'variables';
+@use 'plans';
+@use 'watch-anywhere';
+@use 'available-devices';
+@use 'faq';
+@use 'footer';
+@use 'header';
+
+@font-face {
+    font-family: Avenir;
+    src: url('../../assets/fonts/Avenir-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../../assets/fonts/Avenir-Bold.woff2');
+    font-weight: 700;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Avenir, 'sans-serif';
+    list-style: none;
+}
+
+body{
+    background-color: variables.$corDeFundo
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$corTextPrincipal
+}
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    color: variables.$corTextSecundaria
+}
+
+.text--big{
+    @include text(18px);
+
+    @media screen and (max-width: 768px){
+        @include text(15px)
+    }
+}
+
+.text{
+    @include text;
+
+    @media screen and (max-width: 768px){
+        @include title(14px)
+    }
+}
+
+.text--small{
+    @include text(12px);
+
+    @media screen and (max-width: 768px){
+        @include title(11px)
+    }
+}
+
+.title--big{
+    @include title(48px);
+
+    @media screen and (max-width: 768px){
+        @include title(26px)
+    }
+}
+
+.title{
+    @include title;
+
+    @media screen and (max-width: 768px){
+        @include title(24px)
+    }
+}
+
+.title--small{
+    @include title(28px);
+
+    @media screen and (max-width: 768px){
+        @include title(22px)
+    }
+}
+
+.link-text{
+    @include text(18px);
+    color: variables.$corTextSecundaria;
+    text-decoration: underline;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variables.$corTextPrincipal;
+    background-color: variables.$corDeFundoBotaoPrimario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all ease .2s;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variables.$corDeFundoBotaoPrimario;
+
+    &:hover{
+        background-color: lighten(variables.$corDeFundoBotaoPrimario, 3%);
+    }
+
+    &--secondary{
+        background-color: variables.$corDeFundoBotaoSecundario;
+        border-color: variables.$corDeFundoBotaoSecundario;
+
+        &:hover{
+            background-color: lighten(variables.$corDeFundoBotaoSecundario, 3%);
+        }
+    }
+
+    &--dark{
+        background-color: rgba(variables.$corDeFundoBotaoDark, 0.8);
+        border-color: variables.$corTextSecundaria;
+
+        &:hover{
+            background-color: rgba(variables.$corTextSecundaria, 0.8);
+            color: variables.$corDeFundo;
+        }
+    }
+}
+
+.image-text-section{
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media screen and (max-width: 768px){
+        display: block;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .image-text-section__text-container{
+        padding: 0 2vw;
+
+        h2{
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width{
+        display: block;
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+
+        &__text-container{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media screen and (max-width: 768px){
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
