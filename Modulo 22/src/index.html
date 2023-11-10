@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- AOS ANIMATE ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <!-- SCRIPT DO PROJETO -->
     <script src="scripts/main.js" defer></script>
 </head>
@@ -17,9 +21,62 @@
         <div class="container">
             <img class="hero__logo" src="images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em: 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em: <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2023 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Garantir minha vaga</a>
+            </div>
         </div>
     </header>
+    <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam hic non ab, vero facilis pariatur reiciendis sapiente, debitis laboriosam, labore nemo iure tempora alias mollitia sit libero voluptate corporis! Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere vero porro dolor qui natus obcaecati commodi voluptas voluptate! Repellendus suscipit, nulla dolores delectus quidem molestiae qui ducimus optio odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ullam aliquid! Placeat praesentium ipsum, alias, fugiat perferendis, provident accusamus modi sunt eaque doloremque iusto repudiandae molestiae ea officia sapiente tempore.</p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="front-end">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI - UX</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam hic non ab, vero facilis pariatur reiciendis sapiente, debitis laboriosam, labore nemo iure tempora alias mollitia sit libero voluptate corporis! Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere vero porro dolor qui natus obcaecati commodi voluptas voluptate! Repellendus suscipit, nulla dolores delectus quidem molestiae qui ducimus optio odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ullam aliquid! Placeat praesentium ipsum, alias, fugiat perferendis, provident accusamus modi sunt eaque doloremque iusto repudiandae molestiae ea officia sapiente tempore.</p>
+            </div>
+            <img class="event__image" src="images/ui-ux.png" alt="ui ux">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam hic non ab, vero facilis pariatur reiciendis sapiente, debitis laboriosam, labore nemo iure tempora alias mollitia sit libero voluptate corporis! Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere vero porro dolor qui natus obcaecati commodi voluptas voluptate! Repellendus suscipit, nulla dolores delectus quidem molestiae qui ducimus optio odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ullam aliquid! Placeat praesentium ipsum, alias, fugiat perferendis, provident accusamus modi sunt eaque doloremque iusto repudiandae molestiae ea officia sapiente tempore.</p>
+            </div>
+            <img class="event__image" src="images/data.png" alt="data science">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam hic non ab, vero facilis pariatur reiciendis sapiente, debitis laboriosam, labore nemo iure tempora alias mollitia sit libero voluptate corporis! Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere vero porro dolor qui natus obcaecati commodi voluptas voluptate! Repellendus suscipit, nulla dolores delectus quidem molestiae qui ducimus optio odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ullam aliquid! Placeat praesentium ipsum, alias, fugiat perferendis, provident accusamus modi sunt eaque doloremque iusto repudiandae molestiae ea officia sapiente tempore.</p>
+            </div>
+            <img class="event__image" src="images/backend.png" alt="backend">
+        </div>
+    </section>
 </body>
 </html>
